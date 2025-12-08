@@ -1,2 +1,5 @@
 ```mermaid
-Test ->> Test
+sequenceDiagram
+    participant browser
+    participant server
+
