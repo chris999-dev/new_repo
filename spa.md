@@ -15,6 +15,10 @@ activate server
 server->>browser: JS document
 deactivate server
 Note right of browser: The browser starts executing the JS document and fetches the notes as JSON
-
+browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+activate server
+server->>browser: JSON data
+deactivate server
+Note right of browser: The browser executes JS code to render the notes
 
 
