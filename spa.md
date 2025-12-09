@@ -14,5 +14,7 @@ browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
 activate server
 server->>browser: JS document
 deactivate server
+Note right of browser: The browser starts executing the JS document and fetches the notes as JSON
+
 
 
